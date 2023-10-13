@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    
+    <form method="get" id="dados-form">
+      <label for="nome">Nome completo:</label>
+      <input type="text" name="nome" placeholder="insira seu nome aqui" required>
+      
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" placeholder="fulano@email.com" required>
+      
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+      
+      <label for="tipo-telefone">Tipo de telefone:</label>
+      <select id="tipo-telefone" name="tipo-telefone">
+        <option value="casa">Casa</option>
+        <option value="trabalho">Trabalho</option>
+        <option value="celular">Celular</option>
+      </select>
+      
+      <label for="logradouro">Logradouro:</label>
+      <input type="text" id="logradouro" name="logradouro" placeholder="Opcional (na verdade não é, mas poderia ser)" required>
+      
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" placeholder="Insira aqui sua cidade" required>
+      
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" placeholder="Insira aqui seu estado" required>
+      
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+      
+      <label for="pais">País:</label>
+      <input type="text" id="pais" name="pais" placeholder="Insira aqui seu país" required>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  
+  </body>
+</html>
